@@ -1,0 +1,32 @@
+chegada_inicial: 2.0
+filas:
+  1:
+    servidores: 1
+    capacidade: infinito
+    chegadas: [2.0, 4.0]
+    atendimento: [1.0, 2.0]
+    roteamento:
+      - probabilidade: 0.2
+        destino: 2
+      - probabilidade: 0.8
+        destino: 3
+  2:
+    servidores: 2
+    capacidade: 5
+    atendimento: [4.0, 6.0]
+    roteamento:
+      - probabilidade: 0.2
+        destino: 0  
+      - probabilidade: 0.5
+        destino: 3
+      - probabilidade: 0.3
+        destino: 1
+  3:
+    servidores: 2
+    capacidade: 10
+    atendimento: [5.0, 15.0]
+    roteamento:
+      - probabilidade: 0.3
+        destino: 0
+      - probabilidade: 0.7
+        destino: 2
